@@ -15,23 +15,23 @@ console.log(typeof(age));
 
 
 
-let  marks=99.99    //number   And assigning value
+  marks=99.99    //number   And assigning value
 console.log(typeof(marks));
 
 
-let ans=true    //boolean value
+ ans=true    //boolean value
 console.log(typeof(ans));
 
 
 
 //const variable
 
-const eid=111
-console.log(eid);
+const uid=112
+console.log(uid);
 
 
-const city="mumbai"
-console.log(city);
+const village="mumbai"
+console.log(village);
 
 
 
