@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+
+    <script>
+          
+          
+       //Normal array
+
+        let arr1=[1,2,3,4]
+        let arr2=["skug","LBDA"]
+
+        let res=arr1.concat(arr2)
+        console.log(res);
+
+
+        //Normal Object
+
+        let obj={
+            name:"viraj",
+            Lname:"Chalke"
+        }
+        console.log(obj);
+
+
+        //Using Spread array
+
+        res=[...arr1,"fafa",...arr2,"fsfa"]
+        console.log(res);
+
+        //Object using Spread
+
+        obj={
+            ...obj,
+            id:1
+        }
+
+        console.log(obj);
+
+
+        //rest operator
+
+        //Normal function
+
+        function add(a,b){
+            console.log(a,b);
+        }
+        add(3,5)
+
+
+        // using rest operator
+
+        function sub(...num){
+            console.log(num);
+        }
+        sub(1,2,3,4,5)
+        sub(1,2)
+    </script>
+</body>
+</html>
