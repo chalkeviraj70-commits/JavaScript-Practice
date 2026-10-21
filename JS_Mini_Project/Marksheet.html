@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" onsubmit="return false">
+        <table  border="1" cellpadding=10 cellspacing=0>
+            <tr>
+                <td>hindi</td>
+                <td><input type="number" name="" id="t1" min="0" max="100">(max:100)</td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td><input type="number" id="t2" min="0" max="100"> (max:100)</td>
+            </tr>
+
+
+            <tr>
+                <td>Math</td>
+                <td><input type="number" name="" id="t3" min="0" max="100">  (max:100)</td>
+            </tr>
+
+            <tr>
+                <td>Science</td>
+                <td><input type="number" name="" id="t4" min="0" max="100">(max:100)</td>
+            </tr>
+
+            <tr>
+                <td>Art</td>
+                <td><input type="number" name="" id="t5" min="0" max="100">  (max:100)</td>
+            </tr>
+
+
+            <tr>
+                <td>Computer</td>
+                <td><input type="number" id="t6" min="0" max="100">(max:100)</td>
+
+            </tr>
+
+
+            <tr>
+                <td>Total</td>
+                <td><input type="number"  id="total"></td>
+            </tr>
+
+            <tr>
+               <td>Percentage</td>
+               <td><input type="number" name="" id="perc"></td>
+
+            </tr>
+
+            <tr>
+                <td>Grade </td>
+                <td><input type="text"  id="gd"></td>
+            
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button id="btn" onclick="calc()" >Calculate</button></td>
+            </tr>
+                    
+
+        </table>
+    </div>
+</form>
+
+
+    <script>
+        function calc(){
+              var total=document.getElementById("total")
+              var a=Number ( document.getElementById("t1").value)
+              var b=Number( document.getElementById("t2").value)
+              var c=Number ( document.getElementById("t3").value)
+              var d=Number( document.getElementById("t4").value)
+              var e=Number( document.getElementById("t5").value)
+              var f=Number( document.getElementById("t6").value)
+              
+              total.value = Number(a+b+c+d+e+f)
+            //   console.log(total);
+              
+
+             
+            var marks=total.value
+            var Percentage=document.getElementById("perc")
+             var result= ((marks/600)*100).toFixed(2)
+             Percentage.value=result
+             
+            //  return Percentage
+            // return total
+
+            var grade
+            
+
+            if(result >=90)
+        {
+            grade="A+"
+        }
+
+        else if(result >=80)
+        {
+            grade="A"
+        }
+
+        else if(result >=70)
+        {
+            grade="B+"
+        }
+
+        else if(result  >=60)
+        {
+            grade="B"
+        }
+
+        else if( result >=50)
+        {
+            grade="C"
+        }
+
+        else if(result >=35)
+        {
+            grade="D"
+        }
+
+        else{
+            grade="Fail"
+        }
+        
+        document.getElementById("gd").value=grade
+
+
+
+        }
+
+
+        
+
+
+       
+
+
+
+    </script>
+</body>
+</html>
