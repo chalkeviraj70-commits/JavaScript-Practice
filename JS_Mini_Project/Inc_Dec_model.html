@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            margin-left: 150px ;
+        }
+        .box{
+            height: 200px;
+            width: 150px;
+            border: 1px solid rebeccapurple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* margin: 50px auto; */
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box" id="box">
+        <h1 id="no"></h1>
+    </div>
+
+    <input type="submit"  id="b1" value="increase" onclick="increase1()">
+    <input type="submit" id="b2" value="Decrease" onclick="dicrease1()">
+    </div>
+
+    <script>
+        function increase1(){
+            var a=document.getElementById("no")
+            a.innerText= Number(a.innerText)+1
+            
+        }
+
+
+
+        function dicrease1(){
+            var b=document.getElementById("no")
+            b.innerText=Number(b.innerText)-1
+        }
+    </script>
+</body>
+</html>
