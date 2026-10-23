@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            margin-left: 50px;
+            margin-top: 50px;
+            position: relative;
+        }
+        .box{
+            height: 90px;
+            width: 90px;
+            background-color: brown;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+
+   <!-- Unlimited movement -->
+
+
+    <!-- <script>
+        let a=setInterval(move,1000)
+        let x=0
+        function move(){
+            x=x+10
+
+            document.getElementsByClassName("box")[0].style.top=`${x}px`
+
+            document.getElementsByClassName("box")[0].style.left=`${x}px`
+            console.log(x);
+            // clearInterval(a)
+        }
+    </script> -->
+
+
+    <script>
+        let a=setInterval(move,200)
+        let x=0
+        function move(){
+            x=x+10
+            if(x==320)
+        {
+            clearInterval(a)
+        }
+        else{
+            document.getElementsByClassName("box")[0].style.top=`${x}px`
+
+            document.getElementsByClassName("box")[0].style.left=`${x}px`
+            console.log(x);
+        }
+        }
+    </script>
+</body>
+</html>
